@@ -1,0 +1,330 @@
+
+
+
+
+body{
+
+	
+	background: #E6E6E6;
+	margin: 0;
+	font-family: sans-serif; ;
+
+	text-align: center;
+}	
+header {	
+	width: 100%;
+	background: #D8D8D8;
+	margin: 0;
+}
+footer	{
+	padding-top: 40px;
+	color: black;
+
+}
+
+
+#btn-menu 
+{
+	display: none;
+}
+.slider{
+	
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+	}
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 400%;
+	animation: cambio 20s infinite alternate		;
+}
+.slider li{
+	list-style: none;
+	width: 100%;
+
+}
+.slider img {
+	width: 100%;
+	
+}
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0%;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}		
+	}
+header label {
+	
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	color: white;
+	font-size: 30px;
+	border-right: 1px solid #FAFAFA;
+	display: none;
+
+}
+header label:hover{
+	cursor: pointer;
+	background: #BDBDBD  ; 
+}
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	
+}
+.menu li {
+	flex-grow: 1;
+}
+.menu li a {
+	display: block;
+	padding: 12px 30px;
+	color: #4B8A08 ;
+	text-decoration: none;
+	border-right:  1px solid #FAFAFA;
+	font-size: 23px;
+
+}
+
+
+
+
+
+
+.menu li:hover{
+	background:#BDBDBD; 
+}
+.mc ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	
+}
+
+.mc li {
+	flex-grow: 1;
+
+}
+.mc{
+	background: white;
+}
+.mc li a {
+	display: block;
+	padding: 12px 30px;
+	color: #4B8A08 ;
+	text-decoration: none;
+	font-size: 18px;
+
+}
+.mc li:hover{
+	background:#E6E6E6; 
+}
+
+
+
+.icon-cart{
+	padding-right: 9px;
+}
+ table {
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+	height: 80%;
+
+}
+#Green{
+	background:#04B486;
+}
+.Bronze{
+	background: #D7DF01;
+}
+.gree{
+	background: #01DFA5;
+}
+.Blue{
+
+background:#8181F7;
+}
+.Gray{
+	background: #D358F7;
+}
+td{
+	background:  #EFFBFB;
+	color: #6E6E6E;
+}
+
+td.col1{
+	width: 25%;
+}
+td.col2{
+	width: 25%;
+}
+td.col2{
+	width: 30%;
+}
+th{
+	background: #F2F2F2;
+}
+
+#mapi table, td, th {
+	border: 3px solid #E6E6E6; 
+	}
+#abajo #Mision {
+	background: #E6E6E6;
+	width: 45%;
+	height: 20%;
+	
+	font-family: sans-serif;
+	padding: 10px;
+	border-right: 2px solid  #FAFAFA;
+	overflow: hidden;
+}
+#abajo #vision {
+	background: #E6E6E6;
+	width: 45%;
+	height: 20%;
+	text-align: center;
+	
+	padding: 10px;
+	font-family: sans-serif ;
+
+	overflow: hidden;
+}
+#abajo #call li{
+	list-style: none;
+}
+#abajo #call {
+	background: #E6E6E6;
+	width: 25%;
+	height: 20%;
+	border-right: 3px solid white;
+	font-family: sans-serif;
+	padding: 10px;
+	
+	overflow: hidden;
+}
+#abajo #map {
+	background: #E6E6E6;
+	width: 65%;
+	height: 20%;
+	text-align: center;
+	border: 3px solid white;
+	padding: 10px;
+	font-family: sans-serif ;
+	border-radius: 20px;
+	overflow: hidden;
+}
+#abajo #mapi{
+width: 65%;
+}
+	
+
+section{
+	padding-top: 1px;
+}
+h2{
+	color: #4B8A08;
+	
+	padding: 0;
+	
+
+}
+p{
+	color: #6E6E6E;
+}
+#vision{
+	padding-left: 5px;
+}
+#abajo{
+	display: flex;
+	flex-direction: block;
+	justify-content: space-around;
+}
+.logo{
+	padding-top:  20px;
+}
+
+@media (max-width: 800px){
+header label{
+	display: block;
+}
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+	height: 80%;
+
+}
+.menu {
+	position: absolute;;
+	background:  #D8D8D8;
+	width: 75%;
+	margin-left: -80%;
+	transition: all 1s;
+
+}
+.menu li {
+	border-top: 1px solid white ;
+}
+.menu ul{
+	flex-direction: column;
+}
+.mc ul{
+	flex-direction: column;
+}
+#btn-menu:checked ~ .menu  {
+	margin:  0;
+
+}
+section{
+	display: flex;
+	flex-direction: column;
+}
+#abajo #Mision{
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+}
+#abajo #call{
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+}
+p{
+	padding: 5px;
+}
+#abajo #map{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#abajo #mapi{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#abajo #vision{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}

@@ -1,0 +1,49 @@
+
+.navbar{
+	background: #424242;
+	border: none;
+	margin-bottom: 0;
+}
+
+p{
+	color: #A4A4A4;
+	font-size: 20px;
+}
+body{
+	background: #6E6E6E;
+		}
+.color4{
+	background: #424242;
+	padding-top: 10px;
+}
+li{
+	list-style: none;
+	
+}
+.Gray {
+	background: #DF01A5;		
+}
+.green{
+	background: #04B45F;
+}    
+.bronze{
+	background: #FFBF00;
+}
+.gree{ 
+	background: #2EFE64;
+}   
+.blue{
+	background: #819FF7;
+} 
+.table-condensed tr { 
+	border : 7px solid #6E6E6E;
+
+}
+
+
+@media all and (max-width: 800px) {
+  *{
+  	border:0;
+  	padding: 0;
+  }
+}
